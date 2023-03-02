@@ -1,0 +1,21 @@
+CREATE TABLE [dbo].[tablet_pedidos_itens](
+	[pedidoid] [varchar](30) NULL,
+	[lojaid] [int] NOT NULL,
+	[idg2] [int] NOT NULL,
+	[item] [int] NOT NULL,
+	[produtoid] [int] NOT NULL,
+	[quantidade] [float] NOT NULL,
+	[preco] [float] NOT NULL,
+	[desconto] [float] NOT NULL,
+	[preco_tabela] [float] NOT NULL,
+	[qtd_faturada] [float] NULL,
+	[latitude] [varchar](20) NULL,
+	[longitude] [varchar](20) NULL,
+	[cidade] [varchar](20) NULL,
+	[estado] [varchar](20) NULL,
+	[X] [float] NULL,
+	[Y] [float] NULL,
+	[precoGondola] [float] NULL,
+	[contagem] [float] NULL,
+	[sugestao] [float] NULL
+) ON [PRIMARY]

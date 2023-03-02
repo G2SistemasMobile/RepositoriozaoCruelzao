@@ -1,0 +1,19 @@
+CREATE TABLE [dbo].[SH_PEDIDO_ITEM](
+	[ORDERID] [varchar](60) NULL,
+	[SPECIAL_PRICE] [float] NULL,
+	[SHIPPING_COST] [float] NULL,
+	[REMOTE_STORE_ID] [varchar](20) NULL,
+	[QTY] [int] NULL,
+	[PRODUCT_ID] [varchar](20) NULL,
+	[ORIGINAL_PRICE] [float] NULL,
+	[NAME] [varchar](40) NULL,
+	[ID] [varchar](40) NULL,
+	[GIFT_WRAP] [varchar](40) NULL,
+	[DETAIL] [varchar](80) NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[SH_PEDIDO_ITEM]  WITH CHECK ADD FOREIGN KEY([ORDERID])
+REFERENCES [dbo].[SH_PEDIDO] ([CODE])
+GO
+

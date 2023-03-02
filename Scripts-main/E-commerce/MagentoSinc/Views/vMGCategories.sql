@@ -1,0 +1,11 @@
+CREATE VIEW [dbo].[V_MG_CATEGORIES] AS
+SELECT NAME, LEVEL, PARENT_ID, ISACTIVE, url_parent, url_key, url_key_child
+	FROM (SELECT CATEGORIA NAME, 2 LEVEL, 2 PARENT_ID, 'S' ISACTIVE, '' url_parent, url_key, url_key_child,
+	CATEGORIAID, CATEGORIAID_FILHO,
+        ROW_NUMBER() OVER(PARTITION BY CATEGORIA ORDER BY CATEGORIA DESC) rn
+        FROM [V_MG_PRODUCTS]) a WHERE rn = 1
+UNION
+	SELECT NAME, LEVEL, PARENT_ID, ISACTIVE, url_parent, url_key, url_key_child
+	FROM (SELECT CATEGORIA_FILHO NAME, 3 LEVEL, 2 PARENT_ID, 'S' ISACTIVE, url_key as url_parent, url_key_child AS url_key, '' url_key_child,
+        ROW_NUMBER() OVER(PARTITION BY url_key_child ORDER BY CATEGORIA_FILHO DESC) rn
+        FROM [V_MG_PRODUCTS]) a WHERE rn = 1 AND NAME IS NOT NULL

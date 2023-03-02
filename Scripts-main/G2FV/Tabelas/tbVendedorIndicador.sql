@@ -1,0 +1,15 @@
+CREATE TABLE [dbo].[Vendedor_Indicador](
+	[entidadeid_func] [int] NULL,
+	[Mes] [int] NULL,
+	[Ano] [int] NULL,
+	[descricao_mes] [varchar](30) NULL,
+	[VendasTransmitida] [float] NULL,
+	[VendaFaturada] [float] NULL,
+	[Devolucao] [float] NULL,
+	[VendaNaoFaturada] [float] NULL,
+	[ClientesPositivados] [float] NULL,
+	[Qtd_Vendas] [float] NULL,
+	[MargemContribuicao] [float] NULL,
+	[MARKUP] [float] NULL,
+	[DescontoGeral] [float] NULL
+) ON [PRIMARY]

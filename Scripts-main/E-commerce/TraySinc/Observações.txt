@@ -1,0 +1,3 @@
+Exemplo de dados de integração(INTEGRACAO_ECOMMERCE):
+INTEGRACAOID	ENTIDADEID_LOJA		DATA_INICIAL			DESCRICAO			URL_SITE					CONEXAO		STATUS		OBS		CHAVE_API	CHAVE_APLICACAO		tray_consumer_key									tray_consumer_secret									tray_code								IDG2
+30		1			2020-10-02 14:25:20.017		Tray - Club da Nutrição		https://www.clubdanutricao.com.br/web_api/	NULL		1		NULL		NULL		NULL			consumer_key=8ff4da71cf14d6f5954b87bc3604d8f695f1f7319cd0c284d12c028526c922f4&		consumer_secret=c4dedc25fb212601726210d1e64a01fd7ce182d5437498d68ff39adcdc4ecfe0	code=773e68e1100d36dad69cb6910875000ca0e6ccc58d74c921c69eb7ef7bdea295	3266

@@ -1,0 +1,11 @@
+Exemplo de dados de integração(INTEGRACAO_ECOMMERCE):
+INTEGRACAOID	ENTIDADEID_LOJA		DATA_INICIAL			DESCRICAO		URL_SITE			STATUS	OBS	CHAVE_API	CHAVE_APLICACAO				CONEXAO		INSERE_PRODUTO_API	XUserEmail	xApiKey		xAccountManagerKey	STORE_ID	USER_NAME	INTEGRATION_KEY		PASSWORD	IDG2	INDISPONIBILIZA_PROD_QTD_MIN_API	TRAY_CONSUMER_KEY	TRAY_CONSUMER_SECRET	TRAY_CODE
+1		?			2020-07-09 10:20:08.520		Integração E-commerce	www.megamidiaonline.com.br	1	NULL	?		331625a1-14e8-4934-8967-eb5edec05619	NULL		?			NULL		NULL		NULL			NULL		NULL		NULL			NULL		?	?					NULL			NULL			NULL
+
+
+[Campos Importantes]
+INDISPONIBILIZA_PROD_QTD_MIN_API: Utilize 'S' para que os produtos com quantidade mínima em estoque sejam inativados; 'N' caso contrário.
+INSERE_PRODUTO_API: 		  Utilize 'S' para que os produtos sejam INSERIDOS nos site; 'N' caso contrário.
+CHAVE_API: 			  Utilize a chave do cliente.
+ENTIDADEID_LOJA: 		  Utilize a loja desejada.
+URL_SITE: 			  Site do Cliente.

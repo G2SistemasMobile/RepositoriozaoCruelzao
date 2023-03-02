@@ -1,0 +1,21 @@
+CREATE TABLE [dbo].[MG_ORDER_CUSTOMER_BILLING_ADDRESS](
+	[city] [varchar](300) NULL,
+	[country_id] [varchar](300) NULL,
+	[email] [varchar](300) NULL,
+	[entity_id] [int] NULL,
+	[firstname] [varchar](300) NULL,
+	[lastname] [varchar](300) NULL,
+	[parent_id] [int] NULL,
+	[postcode] [varchar](300) NULL,
+	[region] [varchar](300) NULL,
+	[region_code] [varchar](300) NULL,
+	[region_id] [int] NULL,
+	[telephone] [varchar](300) NULL,
+	[street_1] [varchar](300) NULL,
+	[street_2] [varchar](300) NULL,
+	[street_3] [varchar](300) NULL,
+	[ORDER_ID] [int] NULL,
+	[CUSTOMER_ID] [int] NULL,
+	[BILLING_ADDRESS_ID] [int] NULL,
+	[ADDRESS_TYPE] [varchar](300) NULL
+) ON [PRIMARY]

@@ -1,0 +1,8 @@
+CREATE TABLE TABLET_MOVIMENTO_DIA_CHECKLIST(
+	entidadeid_loja INTEGER,
+	conta VARCHAR(30),
+	checkId INTEGER,
+	descricao VARCHAR(300),
+	resposta VARCHAR(300),
+	obs VARCHAR(300),
+	feito_app VARCHAR(1))

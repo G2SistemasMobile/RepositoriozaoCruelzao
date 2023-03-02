@@ -1,0 +1,16 @@
+CREATE TABLE [dbo].[MG_ORDER_PAYMENT](
+	[additional_info_1] [varchar](500) NULL,
+	[additional_info_2] [varchar](500) NULL,
+	[additional_info_3] [varchar](500) NULL,
+	[amount_ordered] [float] NULL,
+	[base_amount_ordered] [float] NULL,
+	[base_shipping_amount] [float] NULL,
+	[cc_exp_year] [varchar](500) NULL,
+	[cc_ss_start_month] [varchar](500) NULL,
+	[cc_ss_start_year] [varchar](500) NULL,
+	[entity_id] [int] NULL,
+	[method] [varchar](500) NULL,
+	[parent_id] [int] NULL,
+	[shipping_amount] [float] NULL,
+	[ORDER_ID] [int] NULL
+) ON [PRIMARY]

@@ -1,0 +1,5 @@
+CREATE VIEW V_VTEX_FILTRO_GRUPOS_ESPECIFICACOES AS
+SELECT 1 filtroGrupoId, 1 position, 'Informações Adicionais' nomeGrupoGeral, 'Glúten' filtroGrupoDescricao, DESCRICAO descricaoEspecificacao FROM PRODUTOS_COLECOES UNION -- PRODUTOS_COLECOES
+SELECT 2 filtroGrupoId, 2 position, 'Informações Adicionais' nomeGrupoGeral, 'Adoçantes, Açúcares e Conservantes' filtroGrupoDescricao, DESCRICAO descricaoEspecificacao FROM PRODUTOS_CATEGORIA UNION -- PRODUTOS_CATEGORIA
+SELECT 3 filtroGrupoId, 3 position, 'Informações Adicionais' nomeGrupoGeral, 'Tipo de Proteína' filtroGrupoDescricao, DESCRICAO descricaoEspecificacao FROM PRODUTO_STATUS UNION -- PRODUTO_STATUS
+SELECT 4 filtroGrupoId, 4 position, 'Informações Adicionais' nomeGrupoGeral, 'Tipo de Produção' filtroGrupoDescricao, DESCRICAO descricaoEspecificacao FROM PRODUTOS_GRUPOS -- PRODUTOS_GRUPOS
